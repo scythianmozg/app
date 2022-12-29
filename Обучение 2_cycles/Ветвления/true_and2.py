@@ -19,3 +19,7 @@ else:
         breakfast = "- стакан молока"
     elif cereals:
         breakfast = "можно погрызть сухих хлопьев"
+    else:
+        breakfast = "ничего не будет: разгрузочный день"
+
+print("Сегодня на завтрак", breakfast)

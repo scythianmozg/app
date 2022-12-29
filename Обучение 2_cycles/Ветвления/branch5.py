@@ -1,4 +1,3 @@
-messages_count = range(0, 6)
-for i in messages_count:
+for messages_count in range(0, 6):
     if messages_count > 0:
-       print(messages_count)
+    print('Новых сообщений: ' + messages_count)

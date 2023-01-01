@@ -1,4 +1,4 @@
-def print_home(name, planet):
+def print_home(name='инкогнито', planet='икс'):
     print(name + ' живет на планете ' + planet)
 
 tatooin = 'Татуин'

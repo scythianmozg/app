@@ -1,5 +1,5 @@
 # Настройте функцию так, чтобы она не сломалась при вызове без аргументов
-def lets_go(name, target):
+def lets_go(name = 'Друг', target = 'учить Python'):
     print(name + ', пойдём ' + target)
 
 

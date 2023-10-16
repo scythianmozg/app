@@ -1,3 +1,19 @@
+# функция печати таблицы, принимает на вход список списков, ничего не возвращает (неявно возвращается None)
+def print_movie_table(data):
+    for movie in data:
+        for elem in movie:
+            print(f'{elem:<45}', end='')
+        print()
+
+
+def filter_by_genre(data, genre = 'драма'):
+    res=[]
+    for row in data:
+        if genre in row[3]:
+            res.append(row)
+    return res
+
+
 movies_table = [
     ['Побег из Шоушенка', 'США', 1994, 'драма', 142, 9.111],
     ['Крёстный отец', 'США', 1972, 'драма, криминал', 175, 8.730],
@@ -12,5 +28,5 @@ movies_table = [
     ['Иди и смотри', 'СССР', 1985, 'драма, военный', 136, 8.094]
 ]
 
-for row in movies_table:
-    print(row[0]) # напечатаем на экране столбец с названиями
+movies_table_filtered = filter_by_genre(movies_table)
+print_movie_table(movies_table_filtered)

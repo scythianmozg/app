@@ -1,0 +1,12 @@
+import pandas as pd
+
+tracks = [
+    ['Mariah Carey', 'After Tonight', 254],
+    ['Westlife', 'Soledad', 237],
+    ['Daft Punk', 'Instant Crush', 337]
+]
+
+titles = ['artist', 'track', 'duration']
+
+music_df = pd.DataFrame(data=tracks, columns=titles)
+print(music_df['duration'].max()) 

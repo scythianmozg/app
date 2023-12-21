@@ -2,4 +2,4 @@ import pandas as pd
 
 logs = pd.read_csv('/datasets/logs.csv')
 logs['email'] = logs['email'].fillna(value='')
-print(logs)
+print(logs.loc[(logs['source'] == 'None') & (logs['email'] == '')])

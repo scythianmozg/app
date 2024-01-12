@@ -9,6 +9,9 @@ def alert_group(messages):
         return 'высокий' 
     return 'критичный' 
 
-print(alert_group(10)) 
-print(alert_group(450)) 
-print(alert_group(1000)) 
+#print(alert_group(10)) 
+#print(alert_group(450)) 
+#print(alert_group(1000))
+
+support_log_grouped['alert_group'] = support_log_grouped['user_id'].apply(alert_group) 
+print(support_log_grouped.head(10))
